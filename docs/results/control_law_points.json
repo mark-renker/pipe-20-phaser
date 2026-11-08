@@ -1,0 +1,70 @@
+[
+  {
+    "cv_volts": -3.0,
+    "fc_fit_hz": 71.984
+  },
+  {
+    "cv_volts": -2.5,
+    "fc_fit_hz": 97.572
+  },
+  {
+    "cv_volts": -2.0,
+    "fc_fit_hz": 133.789
+  },
+  {
+    "cv_volts": -1.5,
+    "fc_fit_hz": 184.888
+  },
+  {
+    "cv_volts": -1.0,
+    "fc_fit_hz": 256.991
+  },
+  {
+    "cv_volts": -0.5,
+    "fc_fit_hz": 358.565
+  },
+  {
+    "cv_volts": 0.0,
+    "fc_fit_hz": 501.57
+  },
+  {
+    "cv_volts": 0.5,
+    "fc_fit_hz": 702.314
+  },
+  {
+    "cv_volts": 1.0,
+    "fc_fit_hz": 982.911
+  },
+  {
+    "cv_volts": 1.5,
+    "fc_fit_hz": 1372.746
+  },
+  {
+    "cv_volts": 2.0,
+    "fc_fit_hz": 1927.822
+  },
+  {
+    "cv_volts": 2.5,
+    "fc_fit_hz": 2684.365
+  },
+  {
+    "cv_volts": 3.0,
+    "fc_fit_hz": 3717.169
+  },
+  {
+    "cv_volts": 3.5,
+    "fc_fit_hz": 5127.604
+  },
+  {
+    "cv_volts": 4.0,
+    "fc_fit_hz": 6989.573
+  },
+  {
+    "cv_volts": 4.5,
+    "fc_fit_hz": 9435.104
+  },
+  {
+    "cv_volts": 5.0,
+    "fc_fit_hz": 12538.36
+  }
+]

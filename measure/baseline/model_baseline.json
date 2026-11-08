@@ -1,0 +1,14 @@
+{
+  "notch_cv0_fc": 501.57,
+  "notch_cv0_count": 10.0,
+  "notch_cv0_first": 39.7,
+  "control_vpo": 1.0019494367754003,
+  "control_fsat": 61242.843976366166,
+  "osc_onset": 93.0,
+  "osc_f0_cv0": 80.424,
+  "osc_cents_pm1v": 36.8,
+  "thd_0dbfs": 3.70293,
+  "notch_shift": 2.393,
+  "lfo_rate_mid": 1.5004,
+  "alias_10k_static": -200.0
+}

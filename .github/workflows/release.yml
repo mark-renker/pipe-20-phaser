@@ -1,0 +1,48 @@
+# Tag v* -> macOS universal bundles + Windows VST3/CLAP zip attached to a GitHub Release.
+name: release
+on:
+  push:
+    tags: [ 'v*' ]
+permissions:
+  contents: write
+jobs:
+  macos:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+      - run: cmake -B build -DCMAKE_BUILD_TYPE=Release && cmake --build build -j 4 && ./build/pipe20_tests
+      - name: Package
+        run: |
+          VERSION=${GITHUB_REF_NAME#v}
+          mkdir -p dist && cd build/Pipe20Phaser_artefacts/Release
+          for b in "AU/Pipe-20 Phaser.component" "VST3/Pipe-20 Phaser.vst3" "CLAP/Pipe-20 Phaser.clap" "Standalone/Pipe-20 Phaser.app"; do codesign --force --deep -s - "$b"; done
+          zip -ry "../../../dist/Pipe20Phaser-$VERSION-macOS-universal.zip" AU VST3 CLAP Standalone
+      - uses: actions/upload-artifact@v4
+        with: { name: macos, path: dist/* }
+  windows:
+    runs-on: windows-2022
+    steps:
+      - uses: actions/checkout@v4
+      - run: cmake -B build -G "Visual Studio 17 2022" -A x64
+      - run: cmake --build build --config Release --parallel --target Pipe20Phaser_VST3 Pipe20Phaser_CLAP Pipe20Phaser_Standalone pipe20_tests pipe20_render
+      - shell: bash
+        run: |
+          ./build/Release/pipe20_tests.exe
+          VERSION=${GITHUB_REF_NAME#v}; OUT="Pipe-20 Phaser $VERSION (Windows)"; mkdir -p "$OUT" dist
+          cp -R "build/Pipe20Phaser_artefacts/Release/VST3/Pipe-20 Phaser.vst3" "$OUT/"
+          cp "build/Pipe20Phaser_artefacts/Release/CLAP/Pipe-20 Phaser.clap" "$OUT/"
+          cp "build/Pipe20Phaser_artefacts/Release/Standalone/Pipe-20 Phaser.exe" "$OUT/"
+          cp build/Release/pipe20_render.exe resources/tunables.json "$OUT/"
+          7z a "dist/Pipe20Phaser-$VERSION-Windows-x64.zip" "$OUT"
+      - uses: actions/upload-artifact@v4
+        with: { name: windows, path: dist/* }
+  publish:
+    needs: [ macos, windows ]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with: { path: dist }
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: dist/**/*
+          generate_release_notes: true

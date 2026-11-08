@@ -1,0 +1,41 @@
+{
+  "machine": "arm64",
+  "system": "macOS-26.6.2-arm64-arm-64bit",
+  "rows": [
+    {
+      "engine_factor": 1,
+      "seconds_audio": 10,
+      "seconds_cpu": 0.0847,
+      "cpu_percent_one_core": 0.847,
+      "mode": "1x"
+    },
+    {
+      "engine_factor": 2,
+      "seconds_audio": 10,
+      "seconds_cpu": 0.2056,
+      "cpu_percent_one_core": 2.056,
+      "mode": "2x"
+    },
+    {
+      "engine_factor": 4,
+      "seconds_audio": 10,
+      "seconds_cpu": 0.3913,
+      "cpu_percent_one_core": 3.913,
+      "mode": "4x"
+    },
+    {
+      "engine_factor": 8,
+      "seconds_audio": 10,
+      "seconds_cpu": 0.7692,
+      "cpu_percent_one_core": 7.692,
+      "mode": "8x"
+    },
+    {
+      "engine_factor": 4,
+      "seconds_audio": 10,
+      "seconds_cpu": 0.3925,
+      "cpu_percent_one_core": 3.925,
+      "mode": "auto (res 0)"
+    }
+  ]
+}

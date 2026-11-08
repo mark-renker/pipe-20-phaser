@@ -1,0 +1,44 @@
+{
+  "rows": [
+    {
+      "rate_set_hz": 0.1,
+      "smooth": false,
+      "rate_hz": 0.1,
+      "triangle_rms_residual_fraction": 0.0127,
+      "rate_hz_from_shape": 0.1,
+      "smooth_corner_hz": null,
+      "swing_volts": 2.7699,
+      "template_gain": -2.8613
+    },
+    {
+      "rate_set_hz": 0.1,
+      "smooth": true,
+      "rate_hz": 0.0998,
+      "triangle_rms_residual_fraction": 0.4775,
+      "rate_hz_from_shape": 0.0998,
+      "smooth_corner_hz": 0.145,
+      "swing_volts": 0.3689,
+      "template_gain": 0.9225
+    },
+    {
+      "rate_set_hz": 1.5,
+      "smooth": false,
+      "rate_hz": 1.5004
+    },
+    {
+      "rate_set_hz": 1.5,
+      "smooth": true,
+      "rate_hz": 1.5004
+    },
+    {
+      "rate_set_hz": 25.0,
+      "smooth": false,
+      "rate_hz": 25.0
+    },
+    {
+      "rate_set_hz": 25.0,
+      "smooth": true,
+      "rate_hz": 25.0
+    }
+  ]
+}

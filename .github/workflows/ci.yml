@@ -1,0 +1,42 @@
+# Core build + unit tests + model measurements with regression check against measure/baseline/model_baseline.json.
+name: ci
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+  workflow_dispatch:
+jobs:
+  core:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -r measure/requirements.txt
+      - name: Build renderer + tests (no JUCE)
+        run: cmake -B build-core -DPIPE20_BUILD_PLUGINS=OFF -DCMAKE_BUILD_TYPE=Release && cmake --build build-core -j 4
+      - name: Unit tests
+        run: ./build-core/pipe20_tests
+      - name: Model measurements vs baseline
+        run: python measure/run_all.py --quick --check-baseline --out-dir ci-results
+      - uses: actions/upload-artifact@v4
+        with:
+          name: measurements
+          path: ci-results/*
+  plugins-macos:
+    runs-on: macos-15
+    if: github.event_name == 'workflow_dispatch' || startsWith(github.ref, 'refs/tags/')
+    steps:
+      - uses: actions/checkout@v4
+      - name: Configure (universal, JUCE 8.0.6 + clap-juce-extensions via FetchContent)
+        run: cmake -B build -DCMAKE_BUILD_TYPE=Release
+      - run: cmake --build build -j 4
+      - run: ./build/pipe20_tests
+      - name: Package bundles
+        run: |
+          VERSION=$(sed -n 's/^project(Pipe20Phaser VERSION \([0-9.]*\).*/\1/p' CMakeLists.txt)
+          mkdir -p dist && cd build/Pipe20Phaser_artefacts/Release
+          for b in "AU/Pipe-20 Phaser.component" "VST3/Pipe-20 Phaser.vst3" "CLAP/Pipe-20 Phaser.clap" "Standalone/Pipe-20 Phaser.app"; do codesign --force --deep -s - "$b"; done
+          zip -ry "../../../dist/Pipe20Phaser-$VERSION-macOS-universal.zip" AU VST3 CLAP Standalone
+      - uses: actions/upload-artifact@v4
+        with: { name: macos, path: dist/* }

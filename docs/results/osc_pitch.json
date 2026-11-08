@@ -1,0 +1,264 @@
+{
+  "pitch": 500,
+  "onset_resonance_pct": 93.0,
+  "onset_scan": [
+    {
+      "resonance_pct": 70.0,
+      "rms_dbfs": -299.95
+    },
+    {
+      "resonance_pct": 71.0,
+      "rms_dbfs": -299.73
+    },
+    {
+      "resonance_pct": 72.0,
+      "rms_dbfs": -298.78
+    },
+    {
+      "resonance_pct": 73.0,
+      "rms_dbfs": -295.3
+    },
+    {
+      "resonance_pct": 74.0,
+      "rms_dbfs": -287.25
+    },
+    {
+      "resonance_pct": 75.0,
+      "rms_dbfs": -275.78
+    },
+    {
+      "resonance_pct": 76.0,
+      "rms_dbfs": -263.16
+    },
+    {
+      "resonance_pct": 77.0,
+      "rms_dbfs": -250.36
+    },
+    {
+      "resonance_pct": 78.0,
+      "rms_dbfs": -237.62
+    },
+    {
+      "resonance_pct": 79.0,
+      "rms_dbfs": -225.0
+    },
+    {
+      "resonance_pct": 80.0,
+      "rms_dbfs": -212.5
+    },
+    {
+      "resonance_pct": 81.0,
+      "rms_dbfs": -200.11
+    },
+    {
+      "resonance_pct": 82.0,
+      "rms_dbfs": -187.83
+    },
+    {
+      "resonance_pct": 83.0,
+      "rms_dbfs": -175.63
+    },
+    {
+      "resonance_pct": 84.0,
+      "rms_dbfs": -163.5
+    },
+    {
+      "resonance_pct": 85.0,
+      "rms_dbfs": -151.43
+    },
+    {
+      "resonance_pct": 86.0,
+      "rms_dbfs": -139.37
+    },
+    {
+      "resonance_pct": 87.0,
+      "rms_dbfs": -127.26
+    },
+    {
+      "resonance_pct": 88.0,
+      "rms_dbfs": -115.01
+    },
+    {
+      "resonance_pct": 89.0,
+      "rms_dbfs": -102.42
+    },
+    {
+      "resonance_pct": 90.0,
+      "rms_dbfs": -89.07
+    },
+    {
+      "resonance_pct": 91.0,
+      "rms_dbfs": -74.26
+    },
+    {
+      "resonance_pct": 92.0,
+      "rms_dbfs": -57.55
+    },
+    {
+      "resonance_pct": 93.0,
+      "rms_dbfs": -39.44
+    },
+    {
+      "resonance_pct": 94.0,
+      "rms_dbfs": -24.03
+    },
+    {
+      "resonance_pct": 95.0,
+      "rms_dbfs": -18.42
+    },
+    {
+      "resonance_pct": 96.0,
+      "rms_dbfs": -16.01
+    },
+    {
+      "resonance_pct": 97.0,
+      "rms_dbfs": -14.66
+    },
+    {
+      "resonance_pct": 98.0,
+      "rms_dbfs": -13.86
+    },
+    {
+      "resonance_pct": 99.0,
+      "rms_dbfs": -13.26
+    },
+    {
+      "resonance_pct": 100.0,
+      "rms_dbfs": -12.74
+    }
+  ],
+  "pitch_vs_cv": [
+    {
+      "f0_hz": 23.081,
+      "rms_dbfs": -86.02,
+      "peak": 0.0001,
+      "harmonics_db": [
+        0.0,
+        -61.61,
+        -118.2,
+        -121.41,
+        -123.85
+      ],
+      "cv_volts": -3,
+      "cents_vs_1v_oct": 1438.9
+    },
+    {
+      "f0_hz": 21.481,
+      "rms_dbfs": -52.24,
+      "peak": 0.0091,
+      "harmonics_db": [
+        0.0,
+        -4.96,
+        -46.07,
+        -72.24,
+        -108.34
+      ],
+      "cv_volts": -2,
+      "cents_vs_1v_oct": 114.5
+    },
+    {
+      "f0_hz": 41.075,
+      "rms_dbfs": -15.24,
+      "peak": 0.3607,
+      "harmonics_db": [
+        0.0,
+        -10.15,
+        -15.04,
+        -29.1,
+        -44.97
+      ],
+      "cv_volts": -1,
+      "cents_vs_1v_oct": 36.8
+    },
+    {
+      "f0_hz": 80.424,
+      "rms_dbfs": -12.74,
+      "peak": 0.3612,
+      "harmonics_db": [
+        0.0,
+        -11.47,
+        -13.52,
+        -25.93,
+        -42.22
+      ],
+      "cv_volts": 0,
+      "cents_vs_1v_oct": 0.0
+    },
+    {
+      "f0_hz": 157.961,
+      "rms_dbfs": -12.73,
+      "peak": 0.3611,
+      "harmonics_db": [
+        0.0,
+        -11.44,
+        -13.51,
+        -25.91,
+        -42.23
+      ],
+      "cv_volts": 1,
+      "cents_vs_1v_oct": -31.4
+    },
+    {
+      "f0_hz": 309.421,
+      "rms_dbfs": -12.72,
+      "peak": 0.3612,
+      "harmonics_db": [
+        0.0,
+        -11.39,
+        -13.49,
+        -25.87,
+        -42.25
+      ],
+      "cv_volts": 2,
+      "cents_vs_1v_oct": -67.4
+    },
+    {
+      "f0_hz": 598.674,
+      "rms_dbfs": -12.71,
+      "peak": 0.3618,
+      "harmonics_db": [
+        0.0,
+        -11.3,
+        -13.45,
+        -25.78,
+        -42.29
+      ],
+      "cv_volts": 3,
+      "cents_vs_1v_oct": -124.7
+    },
+    {
+      "f0_hz": 1129.376,
+      "rms_dbfs": -12.67,
+      "peak": 0.3636,
+      "harmonics_db": [
+        0.0,
+        -11.2,
+        -13.33,
+        -25.52,
+        -42.31
+      ],
+      "cv_volts": 4,
+      "cents_vs_1v_oct": -225.9
+    },
+    {
+      "f0_hz": 2039.057,
+      "rms_dbfs": -12.61,
+      "peak": 0.3686,
+      "harmonics_db": [
+        0.0,
+        -11.22,
+        -12.99,
+        -24.79,
+        -41.99
+      ],
+      "cv_volts": 5,
+      "cents_vs_1v_oct": -403.0
+    }
+  ],
+  "oscillating_cv_range": [
+    -1,
+    5
+  ],
+  "max_abs_cents_error": 403.0,
+  "max_abs_cents_error_pm1v": 36.8
+}

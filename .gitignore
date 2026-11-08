@@ -1,0 +1,8 @@
+build*/
+dist/
+docs/results/tmp/
+__pycache__/
+*.pyc
+.DS_Store
+*.wav
+!measure/data/hardware/**/*.wav

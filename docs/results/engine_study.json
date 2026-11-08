@@ -1,0 +1,31 @@
+{
+  "rate_factor": [
+    {
+      "factor": 1,
+      "notches": 9,
+      "worst_notch_error_percent": 2.213,
+      "fc_fit_hz": 1969.999
+    },
+    {
+      "factor": 2,
+      "notches": 9,
+      "worst_notch_error_percent": 0.561,
+      "fc_fit_hz": 1992.513
+    },
+    {
+      "factor": 4,
+      "notches": 9,
+      "worst_notch_error_percent": 0.258,
+      "fc_fit_hz": 1998.335
+    },
+    {
+      "factor": 8,
+      "notches": 9,
+      "worst_notch_error_percent": 0.233,
+      "fc_fit_hz": 1999.848
+    }
+  ],
+  "coef_block_1_vs_8_residual_db": -36.84,
+  "engine_1x_vs_4x_residual_db": 1.0,
+  "block_64_vs_4096_residual_db": -400.0
+}

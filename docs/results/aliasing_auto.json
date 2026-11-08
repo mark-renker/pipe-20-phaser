@@ -1,0 +1,2517 @@
+{
+  "10000": {
+    "static": {
+      "f0": 10000.0,
+      "components": [
+        {
+          "freq_hz": 10000.0,
+          "level_dbfs": 3.9,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 20000.0,
+          "level_dbfs": -40.6,
+          "harmonic_order": 2
+        }
+      ],
+      "alias_defects_above_floor": [],
+      "worst_alias_dbfs": null
+    },
+    "modulated": {
+      "f0": 10000.0,
+      "components": [
+        {
+          "freq_hz": 25.0,
+          "level_dbfs": -33.9,
+          "harmonic_order": 0
+        },
+        {
+          "freq_hz": 50.0,
+          "level_dbfs": -35.2,
+          "harmonic_order": 0
+        },
+        {
+          "freq_hz": 75.0,
+          "level_dbfs": -37.5,
+          "harmonic_order": 0
+        },
+        {
+          "freq_hz": 100.0,
+          "level_dbfs": -39.9,
+          "harmonic_order": 0
+        },
+        {
+          "freq_hz": 125.0,
+          "level_dbfs": -42.0,
+          "harmonic_order": 0
+        },
+        {
+          "freq_hz": 150.0,
+          "level_dbfs": -43.7,
+          "harmonic_order": 0
+        },
+        {
+          "freq_hz": 175.0,
+          "level_dbfs": -45.2,
+          "harmonic_order": 0
+        },
+        {
+          "freq_hz": 200.0,
+          "level_dbfs": -46.6,
+          "harmonic_order": 0
+        },
+        {
+          "freq_hz": 225.0,
+          "level_dbfs": -48.3,
+          "harmonic_order": 0
+        },
+        {
+          "freq_hz": 250.0,
+          "level_dbfs": -50.1,
+          "harmonic_order": 0
+        },
+        {
+          "freq_hz": 275.0,
+          "level_dbfs": -52.1,
+          "harmonic_order": 0
+        },
+        {
+          "freq_hz": 300.0,
+          "level_dbfs": -54.2,
+          "harmonic_order": 0
+        },
+        {
+          "freq_hz": 325.0,
+          "level_dbfs": -56.3,
+          "harmonic_order": 0
+        },
+        {
+          "freq_hz": 350.0,
+          "level_dbfs": -58.3,
+          "harmonic_order": 0
+        },
+        {
+          "freq_hz": 375.0,
+          "level_dbfs": -60.1,
+          "harmonic_order": 0
+        },
+        {
+          "freq_hz": 400.0,
+          "level_dbfs": -61.7,
+          "harmonic_order": 0
+        },
+        {
+          "freq_hz": 425.0,
+          "level_dbfs": -63.1,
+          "harmonic_order": 0
+        },
+        {
+          "freq_hz": 450.0,
+          "level_dbfs": -64.2,
+          "harmonic_order": 0
+        },
+        {
+          "freq_hz": 475.0,
+          "level_dbfs": -65.1,
+          "harmonic_order": 0
+        },
+        {
+          "freq_hz": 500.0,
+          "level_dbfs": -66.0,
+          "harmonic_order": 0
+        },
+        {
+          "freq_hz": 525.0,
+          "level_dbfs": -66.8,
+          "harmonic_order": 0
+        },
+        {
+          "freq_hz": 550.0,
+          "level_dbfs": -67.7,
+          "harmonic_order": 0
+        },
+        {
+          "freq_hz": 575.0,
+          "level_dbfs": -68.7,
+          "harmonic_order": 0
+        },
+        {
+          "freq_hz": 600.0,
+          "level_dbfs": -69.9,
+          "harmonic_order": 0
+        },
+        {
+          "freq_hz": 625.0,
+          "level_dbfs": -71.2,
+          "harmonic_order": 0
+        },
+        {
+          "freq_hz": 650.0,
+          "level_dbfs": -72.5,
+          "harmonic_order": 0
+        },
+        {
+          "freq_hz": 675.0,
+          "level_dbfs": -74.0,
+          "harmonic_order": 0
+        },
+        {
+          "freq_hz": 700.0,
+          "level_dbfs": -75.5,
+          "harmonic_order": 0
+        },
+        {
+          "freq_hz": 725.0,
+          "level_dbfs": -77.1,
+          "harmonic_order": 0
+        },
+        {
+          "freq_hz": 750.0,
+          "level_dbfs": -78.6,
+          "harmonic_order": 0
+        },
+        {
+          "freq_hz": 8425.0,
+          "level_dbfs": -79.8,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 8450.0,
+          "level_dbfs": -79.9,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 8475.0,
+          "level_dbfs": -78.7,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 8500.0,
+          "level_dbfs": -78.8,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 8525.0,
+          "level_dbfs": -77.9,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 8550.0,
+          "level_dbfs": -78.2,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 8575.0,
+          "level_dbfs": -77.7,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 8600.0,
+          "level_dbfs": -78.2,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 8625.0,
+          "level_dbfs": -77.9,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 8650.0,
+          "level_dbfs": -78.4,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 8675.0,
+          "level_dbfs": -77.3,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 8700.0,
+          "level_dbfs": -77.1,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 8725.0,
+          "level_dbfs": -75.1,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 8750.0,
+          "level_dbfs": -74.3,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 8775.0,
+          "level_dbfs": -72.6,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 8800.0,
+          "level_dbfs": -72.1,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 8825.0,
+          "level_dbfs": -71.3,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 8850.0,
+          "level_dbfs": -71.4,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 8875.0,
+          "level_dbfs": -72.2,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 8900.0,
+          "level_dbfs": -73.7,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 8925.0,
+          "level_dbfs": -78.0,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 8975.0,
+          "level_dbfs": -76.0,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 9000.0,
+          "level_dbfs": -71.6,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 9025.0,
+          "level_dbfs": -66.3,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 9050.0,
+          "level_dbfs": -64.1,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 9075.0,
+          "level_dbfs": -61.5,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 9100.0,
+          "level_dbfs": -60.2,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 9125.0,
+          "level_dbfs": -59.1,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 9150.0,
+          "level_dbfs": -58.3,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 9175.0,
+          "level_dbfs": -58.3,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 9200.0,
+          "level_dbfs": -57.5,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 9225.0,
+          "level_dbfs": -57.4,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 9250.0,
+          "level_dbfs": -55.5,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 9275.0,
+          "level_dbfs": -53.3,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 9300.0,
+          "level_dbfs": -50.9,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 9325.0,
+          "level_dbfs": -48.2,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 9350.0,
+          "level_dbfs": -46.3,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 9375.0,
+          "level_dbfs": -44.2,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 9400.0,
+          "level_dbfs": -42.7,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 9425.0,
+          "level_dbfs": -41.2,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 9450.0,
+          "level_dbfs": -39.9,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 9475.0,
+          "level_dbfs": -38.7,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 9500.0,
+          "level_dbfs": -37.1,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 9525.0,
+          "level_dbfs": -35.4,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 9550.0,
+          "level_dbfs": -33.1,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 9575.0,
+          "level_dbfs": -30.6,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 9600.0,
+          "level_dbfs": -28.1,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 9625.0,
+          "level_dbfs": -25.6,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 9650.0,
+          "level_dbfs": -23.4,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 9675.0,
+          "level_dbfs": -21.2,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 9700.0,
+          "level_dbfs": -19.3,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 9725.0,
+          "level_dbfs": -17.3,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 9750.0,
+          "level_dbfs": -15.4,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 9775.0,
+          "level_dbfs": -13.5,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 9800.0,
+          "level_dbfs": -11.7,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 9825.0,
+          "level_dbfs": -10.3,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 9850.0,
+          "level_dbfs": -9.2,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 9875.0,
+          "level_dbfs": -9.2,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 9900.0,
+          "level_dbfs": -10.1,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 9925.0,
+          "level_dbfs": -9.4,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 9950.0,
+          "level_dbfs": -5.8,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 9975.0,
+          "level_dbfs": -2.9,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 10000.0,
+          "level_dbfs": 8.0,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 10025.0,
+          "level_dbfs": -2.9,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 10050.0,
+          "level_dbfs": -5.8,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 10075.0,
+          "level_dbfs": -9.3,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 10100.0,
+          "level_dbfs": -10.2,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 10125.0,
+          "level_dbfs": -9.7,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 10150.0,
+          "level_dbfs": -10.1,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 10175.0,
+          "level_dbfs": -11.2,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 10200.0,
+          "level_dbfs": -12.5,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 10225.0,
+          "level_dbfs": -14.2,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 10250.0,
+          "level_dbfs": -15.7,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 10275.0,
+          "level_dbfs": -17.3,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 10300.0,
+          "level_dbfs": -18.7,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 10325.0,
+          "level_dbfs": -20.1,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 10350.0,
+          "level_dbfs": -21.5,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 10375.0,
+          "level_dbfs": -23.0,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 10400.0,
+          "level_dbfs": -24.5,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 10425.0,
+          "level_dbfs": -26.2,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 10450.0,
+          "level_dbfs": -27.8,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 10475.0,
+          "level_dbfs": -29.5,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 10500.0,
+          "level_dbfs": -31.2,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 10525.0,
+          "level_dbfs": -32.9,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 10550.0,
+          "level_dbfs": -34.7,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 10575.0,
+          "level_dbfs": -36.5,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 10600.0,
+          "level_dbfs": -38.4,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 10625.0,
+          "level_dbfs": -40.2,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 10650.0,
+          "level_dbfs": -42.3,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 10675.0,
+          "level_dbfs": -44.2,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 10700.0,
+          "level_dbfs": -46.4,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 10725.0,
+          "level_dbfs": -48.4,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 10750.0,
+          "level_dbfs": -50.9,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 10775.0,
+          "level_dbfs": -53.1,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 10800.0,
+          "level_dbfs": -55.9,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 10825.0,
+          "level_dbfs": -58.4,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 10850.0,
+          "level_dbfs": -62.0,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 10875.0,
+          "level_dbfs": -64.9,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 10900.0,
+          "level_dbfs": -69.0,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 10925.0,
+          "level_dbfs": -70.9,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 10950.0,
+          "level_dbfs": -70.5,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 10975.0,
+          "level_dbfs": -69.9,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 11000.0,
+          "level_dbfs": -68.1,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 11025.0,
+          "level_dbfs": -67.9,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 11050.0,
+          "level_dbfs": -66.8,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 11075.0,
+          "level_dbfs": -66.9,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 11100.0,
+          "level_dbfs": -66.3,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 11125.0,
+          "level_dbfs": -66.6,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 11150.0,
+          "level_dbfs": -66.3,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 11175.0,
+          "level_dbfs": -66.9,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 11200.0,
+          "level_dbfs": -66.8,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 11225.0,
+          "level_dbfs": -67.4,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 11250.0,
+          "level_dbfs": -67.4,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 11275.0,
+          "level_dbfs": -68.1,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 11300.0,
+          "level_dbfs": -68.2,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 11325.0,
+          "level_dbfs": -68.9,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 11350.0,
+          "level_dbfs": -69.1,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 11375.0,
+          "level_dbfs": -69.8,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 11400.0,
+          "level_dbfs": -70.0,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 11425.0,
+          "level_dbfs": -70.7,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 11450.0,
+          "level_dbfs": -70.9,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 11475.0,
+          "level_dbfs": -71.7,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 11500.0,
+          "level_dbfs": -71.9,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 11525.0,
+          "level_dbfs": -72.7,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 11550.0,
+          "level_dbfs": -72.9,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 11575.0,
+          "level_dbfs": -73.6,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 11600.0,
+          "level_dbfs": -73.8,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 11625.0,
+          "level_dbfs": -74.6,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 11650.0,
+          "level_dbfs": -74.7,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 11675.0,
+          "level_dbfs": -75.5,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 11700.0,
+          "level_dbfs": -75.6,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 11725.0,
+          "level_dbfs": -76.4,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 11750.0,
+          "level_dbfs": -76.5,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 11775.0,
+          "level_dbfs": -77.2,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 11800.0,
+          "level_dbfs": -77.3,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 11825.0,
+          "level_dbfs": -78.0,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 11850.0,
+          "level_dbfs": -78.1,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 11875.0,
+          "level_dbfs": -78.8,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 11900.0,
+          "level_dbfs": -78.9,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 11925.0,
+          "level_dbfs": -79.6,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 11950.0,
+          "level_dbfs": -79.6,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 19150.0,
+          "level_dbfs": -79.9,
+          "harmonic_order": 2
+        },
+        {
+          "freq_hz": 19175.0,
+          "level_dbfs": -79.2,
+          "harmonic_order": 2
+        },
+        {
+          "freq_hz": 19200.0,
+          "level_dbfs": -78.6,
+          "harmonic_order": 2
+        },
+        {
+          "freq_hz": 19225.0,
+          "level_dbfs": -78.3,
+          "harmonic_order": 2
+        },
+        {
+          "freq_hz": 19250.0,
+          "level_dbfs": -78.1,
+          "harmonic_order": 2
+        },
+        {
+          "freq_hz": 19275.0,
+          "level_dbfs": -78.2,
+          "harmonic_order": 2
+        },
+        {
+          "freq_hz": 19300.0,
+          "level_dbfs": -78.4,
+          "harmonic_order": 2
+        },
+        {
+          "freq_hz": 19325.0,
+          "level_dbfs": -78.9,
+          "harmonic_order": 2
+        },
+        {
+          "freq_hz": 19350.0,
+          "level_dbfs": -79.5,
+          "harmonic_order": 2
+        },
+        {
+          "freq_hz": 19450.0,
+          "level_dbfs": -79.1,
+          "harmonic_order": 2
+        },
+        {
+          "freq_hz": 19475.0,
+          "level_dbfs": -76.8,
+          "harmonic_order": 2
+        },
+        {
+          "freq_hz": 19500.0,
+          "level_dbfs": -74.3,
+          "harmonic_order": 2
+        },
+        {
+          "freq_hz": 19525.0,
+          "level_dbfs": -72.2,
+          "harmonic_order": 2
+        },
+        {
+          "freq_hz": 19550.0,
+          "level_dbfs": -70.4,
+          "harmonic_order": 2
+        },
+        {
+          "freq_hz": 19575.0,
+          "level_dbfs": -69.1,
+          "harmonic_order": 2
+        },
+        {
+          "freq_hz": 19600.0,
+          "level_dbfs": -68.3,
+          "harmonic_order": 2
+        },
+        {
+          "freq_hz": 19625.0,
+          "level_dbfs": -68.1,
+          "harmonic_order": 2
+        },
+        {
+          "freq_hz": 19650.0,
+          "level_dbfs": -68.5,
+          "harmonic_order": 2
+        },
+        {
+          "freq_hz": 19675.0,
+          "level_dbfs": -69.3,
+          "harmonic_order": 2
+        },
+        {
+          "freq_hz": 19700.0,
+          "level_dbfs": -69.3,
+          "harmonic_order": 2
+        },
+        {
+          "freq_hz": 19725.0,
+          "level_dbfs": -67.4,
+          "harmonic_order": 2
+        },
+        {
+          "freq_hz": 19750.0,
+          "level_dbfs": -64.5,
+          "harmonic_order": 2
+        },
+        {
+          "freq_hz": 19775.0,
+          "level_dbfs": -61.7,
+          "harmonic_order": 2
+        },
+        {
+          "freq_hz": 19800.0,
+          "level_dbfs": -59.3,
+          "harmonic_order": 2
+        },
+        {
+          "freq_hz": 19825.0,
+          "level_dbfs": -57.2,
+          "harmonic_order": 2
+        },
+        {
+          "freq_hz": 19850.0,
+          "level_dbfs": -55.2,
+          "harmonic_order": 2
+        },
+        {
+          "freq_hz": 19875.0,
+          "level_dbfs": -53.0,
+          "harmonic_order": 2
+        },
+        {
+          "freq_hz": 19900.0,
+          "level_dbfs": -50.9,
+          "harmonic_order": 2
+        },
+        {
+          "freq_hz": 19925.0,
+          "level_dbfs": -49.2,
+          "harmonic_order": 2
+        },
+        {
+          "freq_hz": 19950.0,
+          "level_dbfs": -48.6,
+          "harmonic_order": 2
+        },
+        {
+          "freq_hz": 19975.0,
+          "level_dbfs": -51.5,
+          "harmonic_order": 2
+        },
+        {
+          "freq_hz": 20000.0,
+          "level_dbfs": -59.4,
+          "harmonic_order": 2
+        },
+        {
+          "freq_hz": 20025.0,
+          "level_dbfs": -51.7,
+          "harmonic_order": 2
+        },
+        {
+          "freq_hz": 20050.0,
+          "level_dbfs": -48.8,
+          "harmonic_order": 2
+        },
+        {
+          "freq_hz": 20075.0,
+          "level_dbfs": -49.6,
+          "harmonic_order": 2
+        },
+        {
+          "freq_hz": 20100.0,
+          "level_dbfs": -51.3,
+          "harmonic_order": 2
+        },
+        {
+          "freq_hz": 20125.0,
+          "level_dbfs": -53.4,
+          "harmonic_order": 2
+        },
+        {
+          "freq_hz": 20150.0,
+          "level_dbfs": -55.6,
+          "harmonic_order": 2
+        },
+        {
+          "freq_hz": 20175.0,
+          "level_dbfs": -57.5,
+          "harmonic_order": 2
+        },
+        {
+          "freq_hz": 20200.0,
+          "level_dbfs": -59.4,
+          "harmonic_order": 2
+        },
+        {
+          "freq_hz": 20225.0,
+          "level_dbfs": -61.1,
+          "harmonic_order": 2
+        },
+        {
+          "freq_hz": 20250.0,
+          "level_dbfs": -62.8,
+          "harmonic_order": 2
+        },
+        {
+          "freq_hz": 20275.0,
+          "level_dbfs": -64.4,
+          "harmonic_order": 2
+        },
+        {
+          "freq_hz": 20300.0,
+          "level_dbfs": -65.9,
+          "harmonic_order": 2
+        },
+        {
+          "freq_hz": 20325.0,
+          "level_dbfs": -67.3,
+          "harmonic_order": 2
+        },
+        {
+          "freq_hz": 20350.0,
+          "level_dbfs": -68.8,
+          "harmonic_order": 2
+        },
+        {
+          "freq_hz": 20375.0,
+          "level_dbfs": -70.3,
+          "harmonic_order": 2
+        },
+        {
+          "freq_hz": 20400.0,
+          "level_dbfs": -71.8,
+          "harmonic_order": 2
+        },
+        {
+          "freq_hz": 20425.0,
+          "level_dbfs": -73.2,
+          "harmonic_order": 2
+        },
+        {
+          "freq_hz": 20450.0,
+          "level_dbfs": -74.4,
+          "harmonic_order": 2
+        },
+        {
+          "freq_hz": 20475.0,
+          "level_dbfs": -75.4,
+          "harmonic_order": 2
+        },
+        {
+          "freq_hz": 20500.0,
+          "level_dbfs": -76.3,
+          "harmonic_order": 2
+        },
+        {
+          "freq_hz": 20525.0,
+          "level_dbfs": -77.1,
+          "harmonic_order": 2
+        },
+        {
+          "freq_hz": 20550.0,
+          "level_dbfs": -77.9,
+          "harmonic_order": 2
+        },
+        {
+          "freq_hz": 20575.0,
+          "level_dbfs": -78.7,
+          "harmonic_order": 2
+        },
+        {
+          "freq_hz": 20600.0,
+          "level_dbfs": -79.6,
+          "harmonic_order": 2
+        }
+      ],
+      "alias_defects_above_floor": [
+        {
+          "freq_hz": 8425.0,
+          "level_dbfs": -79.8,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 8450.0,
+          "level_dbfs": -79.9,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 8475.0,
+          "level_dbfs": -78.7,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 8500.0,
+          "level_dbfs": -78.8,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 8525.0,
+          "level_dbfs": -77.9,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 8550.0,
+          "level_dbfs": -78.2,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 8575.0,
+          "level_dbfs": -77.7,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 8600.0,
+          "level_dbfs": -78.2,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 8625.0,
+          "level_dbfs": -77.9,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 8650.0,
+          "level_dbfs": -78.4,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 8675.0,
+          "level_dbfs": -77.3,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 8700.0,
+          "level_dbfs": -77.1,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 8725.0,
+          "level_dbfs": -75.1,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 8750.0,
+          "level_dbfs": -74.3,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 8775.0,
+          "level_dbfs": -72.6,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 8800.0,
+          "level_dbfs": -72.1,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 8825.0,
+          "level_dbfs": -71.3,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 8850.0,
+          "level_dbfs": -71.4,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 8875.0,
+          "level_dbfs": -72.2,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 8900.0,
+          "level_dbfs": -73.7,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 8925.0,
+          "level_dbfs": -78.0,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 11050.0,
+          "level_dbfs": -66.8,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 11075.0,
+          "level_dbfs": -66.9,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 11100.0,
+          "level_dbfs": -66.3,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 11125.0,
+          "level_dbfs": -66.6,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 11150.0,
+          "level_dbfs": -66.3,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 11175.0,
+          "level_dbfs": -66.9,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 11200.0,
+          "level_dbfs": -66.8,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 11225.0,
+          "level_dbfs": -67.4,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 11250.0,
+          "level_dbfs": -67.4,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 11275.0,
+          "level_dbfs": -68.1,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 11300.0,
+          "level_dbfs": -68.2,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 11325.0,
+          "level_dbfs": -68.9,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 11350.0,
+          "level_dbfs": -69.1,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 11375.0,
+          "level_dbfs": -69.8,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 11400.0,
+          "level_dbfs": -70.0,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 11425.0,
+          "level_dbfs": -70.7,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 11450.0,
+          "level_dbfs": -70.9,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 11475.0,
+          "level_dbfs": -71.7,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 11500.0,
+          "level_dbfs": -71.9,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 11525.0,
+          "level_dbfs": -72.7,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 11550.0,
+          "level_dbfs": -72.9,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 11575.0,
+          "level_dbfs": -73.6,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 11600.0,
+          "level_dbfs": -73.8,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 11625.0,
+          "level_dbfs": -74.6,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 11650.0,
+          "level_dbfs": -74.7,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 11675.0,
+          "level_dbfs": -75.5,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 11700.0,
+          "level_dbfs": -75.6,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 11725.0,
+          "level_dbfs": -76.4,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 11750.0,
+          "level_dbfs": -76.5,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 11775.0,
+          "level_dbfs": -77.2,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 11800.0,
+          "level_dbfs": -77.3,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 11825.0,
+          "level_dbfs": -78.0,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 11850.0,
+          "level_dbfs": -78.1,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 11875.0,
+          "level_dbfs": -78.8,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 11900.0,
+          "level_dbfs": -78.9,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 11925.0,
+          "level_dbfs": -79.6,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 11950.0,
+          "level_dbfs": -79.6,
+          "harmonic_order": null
+        }
+      ],
+      "worst_alias_dbfs": -66.3
+    }
+  },
+  "15000": {
+    "static": {
+      "f0": 15000.0,
+      "components": [
+        {
+          "freq_hz": 15000.0,
+          "level_dbfs": -0.4,
+          "harmonic_order": 1
+        }
+      ],
+      "alias_defects_above_floor": [],
+      "worst_alias_dbfs": null
+    },
+    "modulated": {
+      "f0": 15000.0,
+      "components": [
+        {
+          "freq_hz": 25.0,
+          "level_dbfs": -37.0,
+          "harmonic_order": 0
+        },
+        {
+          "freq_hz": 50.0,
+          "level_dbfs": -43.4,
+          "harmonic_order": 0
+        },
+        {
+          "freq_hz": 75.0,
+          "level_dbfs": -55.2,
+          "harmonic_order": 0
+        },
+        {
+          "freq_hz": 100.0,
+          "level_dbfs": -50.7,
+          "harmonic_order": 0
+        },
+        {
+          "freq_hz": 125.0,
+          "level_dbfs": -48.6,
+          "harmonic_order": 0
+        },
+        {
+          "freq_hz": 150.0,
+          "level_dbfs": -49.0,
+          "harmonic_order": 0
+        },
+        {
+          "freq_hz": 175.0,
+          "level_dbfs": -50.9,
+          "harmonic_order": 0
+        },
+        {
+          "freq_hz": 200.0,
+          "level_dbfs": -53.6,
+          "harmonic_order": 0
+        },
+        {
+          "freq_hz": 225.0,
+          "level_dbfs": -56.9,
+          "harmonic_order": 0
+        },
+        {
+          "freq_hz": 250.0,
+          "level_dbfs": -60.2,
+          "harmonic_order": 0
+        },
+        {
+          "freq_hz": 275.0,
+          "level_dbfs": -62.8,
+          "harmonic_order": 0
+        },
+        {
+          "freq_hz": 300.0,
+          "level_dbfs": -64.9,
+          "harmonic_order": 0
+        },
+        {
+          "freq_hz": 325.0,
+          "level_dbfs": -66.9,
+          "harmonic_order": 0
+        },
+        {
+          "freq_hz": 350.0,
+          "level_dbfs": -69.0,
+          "harmonic_order": 0
+        },
+        {
+          "freq_hz": 375.0,
+          "level_dbfs": -71.5,
+          "harmonic_order": 0
+        },
+        {
+          "freq_hz": 400.0,
+          "level_dbfs": -74.3,
+          "harmonic_order": 0
+        },
+        {
+          "freq_hz": 425.0,
+          "level_dbfs": -77.2,
+          "harmonic_order": 0
+        },
+        {
+          "freq_hz": 13475.0,
+          "level_dbfs": -79.9,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 13500.0,
+          "level_dbfs": -79.9,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 13525.0,
+          "level_dbfs": -79.2,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 13550.0,
+          "level_dbfs": -79.1,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 13575.0,
+          "level_dbfs": -78.4,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 13600.0,
+          "level_dbfs": -78.4,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 13625.0,
+          "level_dbfs": -77.6,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 13650.0,
+          "level_dbfs": -77.6,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 13675.0,
+          "level_dbfs": -76.8,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 13700.0,
+          "level_dbfs": -76.8,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 13725.0,
+          "level_dbfs": -76.0,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 13750.0,
+          "level_dbfs": -75.9,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 13775.0,
+          "level_dbfs": -75.2,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 13800.0,
+          "level_dbfs": -75.1,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 13825.0,
+          "level_dbfs": -74.3,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 13850.0,
+          "level_dbfs": -74.2,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 13875.0,
+          "level_dbfs": -73.3,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 13900.0,
+          "level_dbfs": -73.2,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 13925.0,
+          "level_dbfs": -72.3,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 13950.0,
+          "level_dbfs": -72.2,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 13975.0,
+          "level_dbfs": -71.3,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 14000.0,
+          "level_dbfs": -71.1,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 14025.0,
+          "level_dbfs": -70.2,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 14050.0,
+          "level_dbfs": -70.0,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 14075.0,
+          "level_dbfs": -69.1,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 14100.0,
+          "level_dbfs": -68.9,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 14125.0,
+          "level_dbfs": -68.0,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 14150.0,
+          "level_dbfs": -67.9,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 14175.0,
+          "level_dbfs": -67.0,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 14200.0,
+          "level_dbfs": -67.1,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 14225.0,
+          "level_dbfs": -66.3,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 14250.0,
+          "level_dbfs": -66.9,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 14275.0,
+          "level_dbfs": -66.3,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 14300.0,
+          "level_dbfs": -67.7,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 14325.0,
+          "level_dbfs": -67.9,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 14350.0,
+          "level_dbfs": -71.6,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 14375.0,
+          "level_dbfs": -74.7,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 14400.0,
+          "level_dbfs": -70.3,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 14425.0,
+          "level_dbfs": -66.1,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 14450.0,
+          "level_dbfs": -58.9,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 14475.0,
+          "level_dbfs": -55.7,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 14500.0,
+          "level_dbfs": -51.1,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 14525.0,
+          "level_dbfs": -48.3,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 14550.0,
+          "level_dbfs": -44.7,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 14575.0,
+          "level_dbfs": -42.2,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 14600.0,
+          "level_dbfs": -39.2,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 14625.0,
+          "level_dbfs": -36.9,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 14650.0,
+          "level_dbfs": -34.4,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 14675.0,
+          "level_dbfs": -32.3,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 14700.0,
+          "level_dbfs": -29.9,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 14725.0,
+          "level_dbfs": -27.5,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 14750.0,
+          "level_dbfs": -24.6,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 14775.0,
+          "level_dbfs": -21.4,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 14800.0,
+          "level_dbfs": -18.2,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 14825.0,
+          "level_dbfs": -14.9,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 14850.0,
+          "level_dbfs": -12.1,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 14875.0,
+          "level_dbfs": -9.4,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 14900.0,
+          "level_dbfs": -7.6,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 14925.0,
+          "level_dbfs": -6.3,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 14950.0,
+          "level_dbfs": -5.7,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 14975.0,
+          "level_dbfs": -4.0,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 15000.0,
+          "level_dbfs": 9.0,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 15025.0,
+          "level_dbfs": -3.9,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 15050.0,
+          "level_dbfs": -5.8,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 15075.0,
+          "level_dbfs": -6.7,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 15100.0,
+          "level_dbfs": -8.0,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 15125.0,
+          "level_dbfs": -9.8,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 15150.0,
+          "level_dbfs": -12.4,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 15175.0,
+          "level_dbfs": -14.9,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 15200.0,
+          "level_dbfs": -17.9,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 15225.0,
+          "level_dbfs": -20.5,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 15250.0,
+          "level_dbfs": -23.2,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 15275.0,
+          "level_dbfs": -25.4,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 15300.0,
+          "level_dbfs": -27.5,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 15325.0,
+          "level_dbfs": -29.1,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 15350.0,
+          "level_dbfs": -30.8,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 15375.0,
+          "level_dbfs": -32.2,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 15400.0,
+          "level_dbfs": -33.8,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 15425.0,
+          "level_dbfs": -35.1,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 15450.0,
+          "level_dbfs": -36.7,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 15475.0,
+          "level_dbfs": -38.0,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 15500.0,
+          "level_dbfs": -39.5,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 15525.0,
+          "level_dbfs": -40.6,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 15550.0,
+          "level_dbfs": -42.1,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 15575.0,
+          "level_dbfs": -43.2,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 15600.0,
+          "level_dbfs": -44.5,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 15625.0,
+          "level_dbfs": -45.6,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 15650.0,
+          "level_dbfs": -46.9,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 15675.0,
+          "level_dbfs": -47.8,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 15700.0,
+          "level_dbfs": -49.1,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 15725.0,
+          "level_dbfs": -50.0,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 15750.0,
+          "level_dbfs": -51.2,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 15775.0,
+          "level_dbfs": -52.0,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 15800.0,
+          "level_dbfs": -53.2,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 15825.0,
+          "level_dbfs": -54.0,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 15850.0,
+          "level_dbfs": -55.1,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 15875.0,
+          "level_dbfs": -55.8,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 15900.0,
+          "level_dbfs": -56.9,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 15925.0,
+          "level_dbfs": -57.6,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 15950.0,
+          "level_dbfs": -58.6,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 15975.0,
+          "level_dbfs": -59.2,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 16000.0,
+          "level_dbfs": -60.3,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 16025.0,
+          "level_dbfs": -60.8,
+          "harmonic_order": 1
+        },
+        {
+          "freq_hz": 16050.0,
+          "level_dbfs": -61.8,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 16075.0,
+          "level_dbfs": -62.4,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 16100.0,
+          "level_dbfs": -63.3,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 16125.0,
+          "level_dbfs": -63.8,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 16150.0,
+          "level_dbfs": -64.8,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 16175.0,
+          "level_dbfs": -65.2,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 16200.0,
+          "level_dbfs": -66.1,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 16225.0,
+          "level_dbfs": -66.5,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 16250.0,
+          "level_dbfs": -67.4,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 16275.0,
+          "level_dbfs": -67.8,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 16300.0,
+          "level_dbfs": -68.7,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 16325.0,
+          "level_dbfs": -69.1,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 16350.0,
+          "level_dbfs": -69.9,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 16375.0,
+          "level_dbfs": -70.2,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 16400.0,
+          "level_dbfs": -71.1,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 16425.0,
+          "level_dbfs": -71.4,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 16450.0,
+          "level_dbfs": -72.2,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 16475.0,
+          "level_dbfs": -72.5,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 16500.0,
+          "level_dbfs": -73.3,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 16525.0,
+          "level_dbfs": -73.5,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 16550.0,
+          "level_dbfs": -74.3,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 16575.0,
+          "level_dbfs": -74.5,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 16600.0,
+          "level_dbfs": -75.3,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 16625.0,
+          "level_dbfs": -75.5,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 16650.0,
+          "level_dbfs": -76.3,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 16675.0,
+          "level_dbfs": -76.5,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 16700.0,
+          "level_dbfs": -77.2,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 16725.0,
+          "level_dbfs": -77.4,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 16750.0,
+          "level_dbfs": -78.2,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 16775.0,
+          "level_dbfs": -78.3,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 16800.0,
+          "level_dbfs": -79.0,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 16825.0,
+          "level_dbfs": -79.1,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 16850.0,
+          "level_dbfs": -79.9,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 16875.0,
+          "level_dbfs": -80.0,
+          "harmonic_order": null
+        }
+      ],
+      "alias_defects_above_floor": [
+        {
+          "freq_hz": 13475.0,
+          "level_dbfs": -79.9,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 13500.0,
+          "level_dbfs": -79.9,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 13525.0,
+          "level_dbfs": -79.2,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 13550.0,
+          "level_dbfs": -79.1,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 13575.0,
+          "level_dbfs": -78.4,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 13600.0,
+          "level_dbfs": -78.4,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 13625.0,
+          "level_dbfs": -77.6,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 13650.0,
+          "level_dbfs": -77.6,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 13675.0,
+          "level_dbfs": -76.8,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 13700.0,
+          "level_dbfs": -76.8,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 13725.0,
+          "level_dbfs": -76.0,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 13750.0,
+          "level_dbfs": -75.9,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 13775.0,
+          "level_dbfs": -75.2,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 13800.0,
+          "level_dbfs": -75.1,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 13825.0,
+          "level_dbfs": -74.3,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 13850.0,
+          "level_dbfs": -74.2,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 13875.0,
+          "level_dbfs": -73.3,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 13900.0,
+          "level_dbfs": -73.2,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 13925.0,
+          "level_dbfs": -72.3,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 13950.0,
+          "level_dbfs": -72.2,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 16050.0,
+          "level_dbfs": -61.8,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 16075.0,
+          "level_dbfs": -62.4,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 16100.0,
+          "level_dbfs": -63.3,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 16125.0,
+          "level_dbfs": -63.8,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 16150.0,
+          "level_dbfs": -64.8,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 16175.0,
+          "level_dbfs": -65.2,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 16200.0,
+          "level_dbfs": -66.1,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 16225.0,
+          "level_dbfs": -66.5,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 16250.0,
+          "level_dbfs": -67.4,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 16275.0,
+          "level_dbfs": -67.8,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 16300.0,
+          "level_dbfs": -68.7,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 16325.0,
+          "level_dbfs": -69.1,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 16350.0,
+          "level_dbfs": -69.9,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 16375.0,
+          "level_dbfs": -70.2,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 16400.0,
+          "level_dbfs": -71.1,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 16425.0,
+          "level_dbfs": -71.4,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 16450.0,
+          "level_dbfs": -72.2,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 16475.0,
+          "level_dbfs": -72.5,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 16500.0,
+          "level_dbfs": -73.3,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 16525.0,
+          "level_dbfs": -73.5,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 16550.0,
+          "level_dbfs": -74.3,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 16575.0,
+          "level_dbfs": -74.5,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 16600.0,
+          "level_dbfs": -75.3,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 16625.0,
+          "level_dbfs": -75.5,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 16650.0,
+          "level_dbfs": -76.3,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 16675.0,
+          "level_dbfs": -76.5,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 16700.0,
+          "level_dbfs": -77.2,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 16725.0,
+          "level_dbfs": -77.4,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 16750.0,
+          "level_dbfs": -78.2,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 16775.0,
+          "level_dbfs": -78.3,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 16800.0,
+          "level_dbfs": -79.0,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 16825.0,
+          "level_dbfs": -79.1,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 16850.0,
+          "level_dbfs": -79.9,
+          "harmonic_order": null
+        },
+        {
+          "freq_hz": 16875.0,
+          "level_dbfs": -80.0,
+          "harmonic_order": null
+        }
+      ],
+      "worst_alias_dbfs": -61.8
+    }
+  },
+  "os": "auto"
+}
