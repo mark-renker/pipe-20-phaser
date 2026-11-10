@@ -1,7 +1,7 @@
 # Pipe-20 Phaser — independent behavioural model inspired by the Tau "The Pipe" phaser / Jürgen Haible redesign.
 # Targets: pipe20_tests (unit tests), pipe20_render (WAV->WAV), Pipe20Phaser (AU / VST3 / CLAP / standalone).
 cmake_minimum_required(VERSION 3.22)
-project(Pipe20Phaser VERSION 0.1.0 LANGUAGES C CXX)
+project(Pipe20Phaser VERSION 0.2.0 LANGUAGES C CXX)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -68,11 +68,18 @@ juce_add_plugin(Pipe20Phaser
   NEEDS_MIDI_INPUT FALSE
   NEEDS_MIDI_OUTPUT FALSE
   COPY_PLUGIN_AFTER_BUILD FALSE)
-target_sources(Pipe20Phaser PRIVATE src/plugin/PluginProcessor.cpp src/plugin/PluginEditor.cpp)
+target_sources(Pipe20Phaser PRIVATE src/plugin/PluginProcessor.cpp)
 target_compile_definitions(Pipe20Phaser PUBLIC
   JUCE_WEB_BROWSER=0 JUCE_USE_CURL=0 JUCE_VST3_CAN_REPLACE_VST2=0 JUCE_DISPLAY_SPLASH_SCREEN=0)
 target_link_libraries(Pipe20Phaser
   PRIVATE juce::juce_audio_utils
+  PUBLIC juce::juce_recommended_config_flags juce::juce_recommended_lto_flags juce::juce_recommended_warning_flags)
+
+# ---- UI snapshot tool (renders the editor to PNG, no host needed) -----------
+juce_add_console_app(pipe20_snapshot PRODUCT_NAME "pipe20_snapshot")
+target_sources(pipe20_snapshot PRIVATE tools/Snapshot.cpp src/plugin/PluginProcessor.cpp)
+target_compile_definitions(pipe20_snapshot PRIVATE JUCE_WEB_BROWSER=0 JUCE_USE_CURL=0 JUCE_MODAL_LOOPS_PERMITTED=1)
+target_link_libraries(pipe20_snapshot PRIVATE juce::juce_audio_utils juce::juce_gui_extra
   PUBLIC juce::juce_recommended_config_flags juce::juce_recommended_lto_flags juce::juce_recommended_warning_flags)
 
 if(PIPE20_BUILD_CLAP)

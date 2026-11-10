@@ -35,7 +35,7 @@ public:
     juce::AudioProcessorValueTreeState apvts;
     std::atomic<float> cpuLoad { 0.0f }, currentFc { 0.0f };
     std::atomic<int> engineFactor { 1 };
-    std::atomic<bool> lfoRising { true };
+    std::atomic<bool> lfoRising { true }, inSignal { false }, inClip { false }, oscillating { false }, depthActive { false };
 
 private:
     juce::AudioProcessorValueTreeState::ParameterLayout makeLayout();
@@ -44,6 +44,7 @@ private:
     pipe20::Engine engine;
     juce::SpinLock engineLock;
     std::vector<float> mono, cv1, cv2, outL, outR;
+    int clipHold = 0, sigHold = 0;
     struct P { std::atomic<float>* pitch, *res, *rate, *slow, *depth, *smooth, *color, *output, *mode, *stages, *cvatt, *input, *drive, *os; } prm {};
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (Pipe20Processor)
 };

@@ -11,25 +11,27 @@ juce::AudioProcessorValueTreeState::ParameterLayout Pipe20Processor::makeLayout(
     NormalisableRange<float> pitchRange (20.0f, 20000.0f, 0.0f); pitchRange.setSkewForCentre (500.0f);
     ps.push_back (std::make_unique<AudioParameterFloat> (ParameterID ("pitch", 1), "Pitch", pitchRange, 500.0f,
         AudioParameterFloatAttributes().withLabel ("Hz").withStringFromValueFunction (hz)));
+    auto pct = [] (float v, int) { return String (v, 1) + " %"; };
+    auto fromText = [] (const String& t) { return t.retainCharacters ("0123456789.-").getFloatValue(); };
     ps.push_back (std::make_unique<AudioParameterFloat> (ParameterID ("resonance", 1), "Resonance", NormalisableRange<float> (0.0f, 100.0f, 0.1f), 0.0f,
-        AudioParameterFloatAttributes().withLabel ("%")));
+        AudioParameterFloatAttributes().withLabel ("%").withStringFromValueFunction (pct).withValueFromStringFunction (fromText)));
     NormalisableRange<float> rateRange (0.1f, 25.0f, 0.0f); rateRange.setSkewForCentre (1.5f);
     ps.push_back (std::make_unique<AudioParameterFloat> (ParameterID ("lfo_rate", 1), "LFO Rate", rateRange, 1.0f,
         AudioParameterFloatAttributes().withLabel ("Hz").withStringFromValueFunction ([] (float v, int) { return String (v, 2) + " Hz"; })));
     ps.push_back (std::make_unique<AudioParameterBool> (ParameterID ("lfo_slow", 1), "LFO Slow (L*)", false));
     ps.push_back (std::make_unique<AudioParameterFloat> (ParameterID ("lfo_depth", 1), "LFO Depth", NormalisableRange<float> (0.0f, 100.0f, 0.1f), 0.0f,
-        AudioParameterFloatAttributes().withLabel ("%")));
+        AudioParameterFloatAttributes().withLabel ("%").withStringFromValueFunction (pct).withValueFromStringFunction (fromText)));
     ps.push_back (std::make_unique<AudioParameterBool> (ParameterID ("lfo_smooth", 1), "LFO Smooth", false));
     ps.push_back (std::make_unique<AudioParameterBool> (ParameterID ("color", 1), "Color (invert wet)", false));
     ps.push_back (std::make_unique<AudioParameterChoice> (ParameterID ("output", 1), "Output", StringArray { "Normal", "Alternative", "Stereo" }, 2));
     ps.push_back (std::make_unique<AudioParameterChoice> (ParameterID ("mode", 1), "Mode", StringArray { "Phase", "Vibrato" }, 0));
     ps.push_back (std::make_unique<AudioParameterChoice> (ParameterID ("stages", 1), "Stages", StringArray { "12", "16", "18", "20" }, 3));
     ps.push_back (std::make_unique<AudioParameterFloat> (ParameterID ("cv_att", 1), "CV Attenuverter", NormalisableRange<float> (-100.0f, 100.0f, 0.1f), 0.0f,
-        AudioParameterFloatAttributes().withLabel ("%")));
+        AudioParameterFloatAttributes().withLabel ("%").withStringFromValueFunction ([] (float v, int) { const int i = (int) std::lround (v); return (i >= 0 ? "+" : "") + String (i) + " %"; }).withValueFromStringFunction (fromText)));
     ps.push_back (std::make_unique<AudioParameterFloat> (ParameterID ("input", 1), "Input", NormalisableRange<float> (-60.0f, 6.0f, 0.1f), 0.0f,
-        AudioParameterFloatAttributes().withLabel ("dB").withStringFromValueFunction ([] (float v, int) { return v <= -59.9f ? String ("-inf dB") : String (v, 1) + " dB"; })));
+        AudioParameterFloatAttributes().withLabel ("dB").withStringFromValueFunction ([] (float v, int) { return v <= -59.9f ? String ("-inf dB") : (v >= 0 ? "+" : "") + String (v, 1) + " dB"; }).withValueFromStringFunction ([] (const String& t) { return t.containsIgnoreCase ("inf") ? -60.0f : t.retainCharacters ("0123456789.-").getFloatValue(); })));
     ps.push_back (std::make_unique<AudioParameterFloat> (ParameterID ("drive", 1), "Drive / Matching", NormalisableRange<float> (0.0f, 1.0f, 0.01f), 1.0f,
-        AudioParameterFloatAttributes().withStringFromValueFunction ([] (float v, int) { return v <= 0.0f ? String ("ideal") : String (v, 2); })));
+        AudioParameterFloatAttributes().withStringFromValueFunction ([] (float v, int) { return v <= 0.0f ? String ("ideal") : String (v * 100.0f, 0) + " %"; }).withValueFromStringFunction ([] (const String& t) { return t.containsIgnoreCase ("ideal") ? 0.0f : t.retainCharacters ("0123456789.").getFloatValue() / 100.0f; })));
     ps.push_back (std::make_unique<AudioParameterChoice> (ParameterID ("oversampling", 1), "Oversampling", StringArray { "Auto", "1x", "2x", "4x", "8x" }, 0));
     return { ps.begin(), ps.end() };
 }
@@ -124,6 +126,10 @@ void Pipe20Processor::processBlock (juce::AudioBuffer<float>& buf, juce::MidiBuf
         if (sc.getNumChannels() >= 1) c1 = sc.getReadPointer (0);
         if (sc.getNumChannels() >= 2) c2 = sc.getReadPointer (1);
     }
+    float peak = 0.0f; for (int i = 0; i < n; ++i) peak = juce::jmax (peak, std::abs (mono[(size_t) i]));
+    sigHold = peak > 0.002f ? 8 : juce::jmax (0, sigHold - 1); clipHold = peak > 0.98f ? 12 : juce::jmax (0, clipHold - 1);
+    inSignal.store (sigHold > 0); inClip.store (clipHold > 0);
+    oscillating.store (engine.p.resonancePct * 0.01 * engine.tun.fb_gain_max >= 1.0);
     engine.process (mono.data(), c1, c2, outL.data(), outR.data(), n);
     auto out = getBusBuffer (buf, false, 0);
     if (out.getNumChannels() >= 2) { out.copyFrom (0, 0, outL.data(), n); out.copyFrom (1, 0, outR.data(), n); }
@@ -132,7 +138,7 @@ void Pipe20Processor::processBlock (juce::AudioBuffer<float>& buf, juce::MidiBuf
     const double sec = juce::Time::highResolutionTicksToSeconds (juce::Time::getHighResolutionTicks() - t0);
     const float load = (float) (sec / (n / getSampleRate()));
     cpuLoad.store (cpuLoad.load() * 0.9f + load * 0.1f);
-    currentFc.store ((float) engine.currentFc()); engineFactor.store (engine.currentFactor()); lfoRising.store (engine.lfoRising());
+    currentFc.store ((float) engine.currentFc()); engineFactor.store (engine.currentFactor()); lfoRising.store (engine.lfoRising()); depthActive.store (engine.p.lfoDepthPct > 0.5f);
 }
 
 void Pipe20Processor::getStateInformation (juce::MemoryBlock& dest)

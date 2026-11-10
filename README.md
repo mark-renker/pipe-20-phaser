@@ -26,9 +26,16 @@ Grab the latest files from the **[Releases page](../../releases/latest)**:
 The plug-in shows up under **Renky Denk › Pipe-20 Phaser**. Every tagged release is built by
 `.github/workflows/release.yml`; `packaging/make_installer.sh` makes the same `.pkg` locally.
 
-## Status (6 Nov 2026)
+![Pipe-20 Phaser UI](docs/screenshot.png)
+
+The panel is an original design: the matte-black rack-unit character of 1980 outboard gear in general, with its
+own layout, legends and typography (no Haible / Random\*Source / Tau Systems artwork or trade dress, per spec 6 and 9).
+It is freely resizable. `pipe20_snapshot out.png [scale]` renders it headlessly for the docs.
+
+## Status (9 Nov 2026)
 
 * DSP core complete, 65 unit checks pass (`tests/UnitTests.cpp`), AU/VST3 pass `auval` and pluginval strictness 8.
+* v0.2.0: rack-panel editor with unit readouts, LFO direction / oscillation / signal / clip LEDs, snapshot tool.
 * **No hardware has been measured yet.** Every behavioural constant is a nominal default in
   `resources/tunables.json` (derived from the spec and published build notes), and `docs/results.md` reports what the
   *model* does. The Section 8 acceptance items read "not measured" until the captures in `docs/measurement_protocol.md`
@@ -106,8 +113,8 @@ Block diagram: `docs/block_diagram.md`. Protocol for the hardware captures: `doc
 
 ```
 src/dsp/        JUCE-free core: Phaser.h (engine), Tunables.h, OversampleFilters.h, WavFile.h, TinyJson.h
-src/plugin/     JUCE processor + plain editor
-tools/render.cpp   pipe20_render WAV->WAV (all parameters as flags, --cv file, --bench)
+src/plugin/     JUCE processor + rack-panel editor (header-only)
+tools/render.cpp   pipe20_render WAV->WAV (all parameters as flags, --cv file, --bench); tools/Snapshot.cpp editor -> PNG
 tests/          unit tests (stage phase, notch map, feedback stability, LFO, oversampler, tunables, outputs)
 measure/        Python: notch_map, control_law_fit, thd_n, osc_pitch, lfo_measure, null_test, aliasing, cpu_bench,
                 compare (acceptance table), run_all (+ baseline regression), design_os_filters
