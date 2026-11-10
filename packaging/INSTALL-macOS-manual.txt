@@ -1,0 +1,10 @@
+Pipe-20 Phaser - manual macOS install (if you prefer not to use the .pkg)
+
+1. Copy "Pipe-20 Phaser.component" to ~/Library/Audio/Plug-Ins/Components/
+2. Copy "Pipe-20 Phaser.vst3" to ~/Library/Audio/Plug-Ins/VST3/
+3. Copy "Pipe-20 Phaser.clap" to ~/Library/Audio/Plug-Ins/CLAP/
+4. Because the bundles were downloaded (not installed by a .pkg), macOS quarantines them. Clear that once:
+      xattr -dr com.apple.quarantine ~/Library/Audio/Plug-Ins/Components/"Pipe-20 Phaser.component" \
+                                     ~/Library/Audio/Plug-Ins/VST3/"Pipe-20 Phaser.vst3" \
+                                     ~/Library/Audio/Plug-Ins/CLAP/"Pipe-20 Phaser.clap"
+5. Rescan plug-ins in your DAW. The plug-in appears under "Renky Denk".

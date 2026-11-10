@@ -32,11 +32,7 @@ jobs:
         run: cmake -B build -DCMAKE_BUILD_TYPE=Release
       - run: cmake --build build -j 4
       - run: ./build/pipe20_tests
-      - name: Package bundles
-        run: |
-          VERSION=$(sed -n 's/^project(Pipe20Phaser VERSION \([0-9.]*\).*/\1/p' CMakeLists.txt)
-          mkdir -p dist && cd build/Pipe20Phaser_artefacts/Release
-          for b in "AU/Pipe-20 Phaser.component" "VST3/Pipe-20 Phaser.vst3" "CLAP/Pipe-20 Phaser.clap" "Standalone/Pipe-20 Phaser.app"; do codesign --force --deep -s - "$b"; done
-          zip -ry "../../../dist/Pipe20Phaser-$VERSION-macOS-universal.zip" AU VST3 CLAP Standalone
+      - name: Package installer
+        run: packaging/make_installer.sh build
       - uses: actions/upload-artifact@v4
         with: { name: macos, path: dist/* }

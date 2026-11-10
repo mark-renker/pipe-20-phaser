@@ -1,0 +1,11 @@
+Pipe-20 Phaser - Windows install
+
+1. Copy the "Pipe-20 Phaser.vst3" folder to   C:\Program Files\Common Files\VST3\
+2. Copy "Pipe-20 Phaser.clap" to              C:\Program Files\Common Files\CLAP\   (Bitwig, Reaper, other CLAP hosts)
+3. Rescan plug-ins in your DAW. The plug-in appears under "Renky Denk".
+4. "Pipe-20 Phaser.exe" is the standalone app; it runs from anywhere. If SmartScreen warns about an
+   unrecognized app, click More info > Run anyway (the build is not code-signed).
+
+To retune the model after measuring hardware, copy tunables.json to %APPDATA%\Pipe20Phaser\tunables.json
+and press "Reload tunables" in the plug-in. pipe20_render.exe is the command-line WAV renderer used by the
+measurement scripts.

@@ -11,6 +11,21 @@ fidelity is defined by the measurements in its Section 8, run by the scripts in 
 Formats: AU, VST3, CLAP, standalone app (JUCE 8), plus a JUCE-free `pipe20_render` WAV→WAV renderer for the
 measurement scripts. Licence: MIT for the code and data (see `LICENSE`; it does not cover the hardware designs).
 
+## Install (no build needed)
+
+Grab the latest files from the **[Releases page](../../releases/latest)**:
+
+* **macOS** (11 or later, Apple Silicon and Intel): download `Pipe20Phaser-<version>-macOS.pkg` and open it. If
+  Gatekeeper objects (the installer is not notarized), right-click the file and choose *Open*. Tick the formats you
+  want (AU, VST3, CLAP, standalone app); they go to `/Library/Audio/Plug-Ins` and `/Applications`. Rescan plug-ins in
+  your DAW. Prefer not to run an installer? `Pipe20Phaser-<version>-macOS-bundles.zip` has the raw bundles and a
+  manual-install note.
+* **Windows** (x64): download `Pipe20Phaser-<version>-Windows-x64.zip`, unzip, copy `Pipe-20 Phaser.vst3` to
+  `C:\Program Files\Common Files\VST3\` and `Pipe-20 Phaser.clap` to `C:\Program Files\Common Files\CLAP\`.
+
+The plug-in shows up under **Renky Denk › Pipe-20 Phaser**. Every tagged release is built by
+`.github/workflows/release.yml`; `packaging/make_installer.sh` makes the same `.pkg` locally.
+
 ## Status (6 Nov 2026)
 
 * DSP core complete, 65 unit checks pass (`tests/UnitTests.cpp`), AU/VST3 pass `auval` and pluginval strictness 8.
@@ -21,7 +36,7 @@ measurement scripts. Licence: MIT for the code and data (see `LICENSE`; it does 
 * Random\*Source has not yet been asked about the "Haible" / "Tau Pipe" names, hence the descriptive name. Their reply
   will be recorded here.
 
-## Build
+## Build from source
 
 ```
 # core only (renderer + tests, no JUCE): Linux/macOS/Windows
