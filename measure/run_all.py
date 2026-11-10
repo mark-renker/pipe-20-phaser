@@ -106,7 +106,7 @@ if __name__ == "__main__":
     ap.add_argument("--check-baseline", action="store_true"); ap.add_argument("--write-baseline", action="store_true"); ap.add_argument("--quick", action="store_true")
     ap.add_argument("--out-dir", default=str(p20.RESULTS))
     a = ap.parse_args()
-    out = Path(a.out_dir); out.mkdir(parents=True, exist_ok=True); t0 = time.time()
+    out = Path(a.out_dir).resolve(); out.mkdir(parents=True, exist_ok=True); t0 = time.time()
     sh("notch_map.py", "--model", "--out-dir", out)
     sh("control_law_fit.py", "--model", "--out-dir", out, *([] if not a.quick else ["--cv", "-3", "-1", "0", "1", "3", "5"]))
     sh("thd_n.py", "--model", "--out-dir", out)
